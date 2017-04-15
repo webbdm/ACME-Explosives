@@ -35,7 +35,7 @@ $(document).ready(function() {
     var productsJSON = function() {
         return new Promise(function(resolve, reject) {
             $.ajax("./db/products.json").done(function(data3) {
-                resolve(data3.products);
+                resolve(data3.products[0]);
             }).fail(function(error3) {
                 reject(error3);
             })
@@ -63,14 +63,30 @@ $(document).ready(function() {
     // });
 
     //this method works the best for this solution
-    Promise.all([categoriesJSON(), typesJSON(), productsJSON()])
-        .then(function(resultz) {
-            console.log("resultz", resultz);
-            resultz.forEach(function(ajaxCalls) {
-                ajaxCalls.forEach(function(data) {
-                    dataArray.push(data);
+
+    function getData() {
+        Promise.all([categoriesJSON(), typesJSON(), productsJSON()])
+            .then(function(resultz) {
+                console.log("resultz", resultz);
+                resultz.forEach(function(ajaxCalls) {
+
+                    dataArray.push(ajaxCalls);
+
+                    // ajaxCalls.forEach(function(data) {
+                    //     dataArray.push(data);
+                    // })
                 })
+                console.log(dataArray);
+                writeDOM();
             })
-            writeDOM();
-        })
+    }
+
+    $("#dropFireworks").click(function(e){
+        console.log($(this).text());
+    });
+    $("#dropDemo").click(function(e){
+        console.log($(this).text());
+    });
+
+
 });
