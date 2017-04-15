@@ -2,9 +2,63 @@ $(document).ready(function() {
 
     var dataArray = [];
 
+    $.ajax("./db/categories.json").done(function(data1) {
+        makeDropdown(data1);
+    }).fail(function(error) {
+        console.log(error);
+    })
 
-    function writeDOM() {
+    function makeDropdown(data1) {
+
+        catList = data1.categories;
+
+        string = "";
+        catList.forEach(function(val, index) {
+            $('#drop').append(`<li><a href="#" id="drop${val.name}">${val.name}</a></li>`);
+        });
+
+        $("#dropFireworks").click(function(e) {
+            var clickedCat = $(this).text(); // Note: Fireworks is uppercase
+            getData(clickedCat);
+        });
+        $("#dropDemolition").click(function(e) {
+            var clickedCat = $(this).text(); // Note: Demolition is uppercase
+            getData(clickedCat);
+        });
+
+    }
+
+    function writeDOM(clickedCat, resultz) {
         var domString = "";
+        //console.log(clickedCat, resultz);
+
+        var cats = resultz[0];
+        var types = resultz[1];
+        var products = resultz[2];
+        console.log(cats, types, products);
+
+        cats.forEach(function(category, index) {
+            if (category.name === clickedCat) {
+                console.log(category.name);
+                types.forEach(function(type, currentType) {
+                    if (currentType === category.id) {
+                        products.forEach(function(product) {
+                            console.log(product);
+                            // if (product.type === ) {
+
+                            // }
+                        })
+
+                    }
+                })
+            }
+        })
+
+
+
+
+
+
     }
 
     var categoriesJSON = function() {
@@ -37,31 +91,17 @@ $(document).ready(function() {
         })
     };
 
-    //this method works the best for this solution
-
-    function getData() {
+    function getData(clickedCat) {
         Promise.all([categoriesJSON(), typesJSON(), productsJSON()])
             .then(function(resultz) {
-                console.log("resultz", resultz);
+                //console.log("resultz", resultz);
                 resultz.forEach(function(ajaxCalls) {
-                        console.log(ajaxCalls);
+                        //console.log(ajaxCalls);
                         //dataArray.push(ajaxCalls);
                     })
                     //console.log(dataArray);
-                writeDOM();
+                writeDOM(clickedCat, resultz);
             })
     }
-
-    $("#dropFireworks").click(function(e) {
-        var clickedCat = $(this).text();
-        console.log(clickedCat);
-        getData(clickedCat);
-    });
-    $("#dropDemo").click(function(e) {
-        var clickedCat = $(this).text();
-        console.log(clickedCat);
-        getData(clickedCat);
-    });
-
 
 });
