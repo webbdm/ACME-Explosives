@@ -5,12 +5,7 @@ $(document).ready(function() {
 
     function writeDOM() {
         var domString = "";
-        for (var i = 0; i < dataArray.length; i++) {
-            domString += `<h1>${dataArray[i].type}</h1>`;
-        }
-        //$("#promises").append(domString);
     }
-
 
     var categoriesJSON = function() {
         return new Promise(function(resolve, reject) {
@@ -42,26 +37,6 @@ $(document).ready(function() {
         })
     };
 
-    // //this is the most ideal method
-    // categoriesJSON().then(function(jsonData1){
-    //     console.log("categories",jsonData1);
-    //     dataArray = jsonData1;
-    //     return typesJSON();
-    // }).then(function(jsonData2){
-    //     console.log("types",jsonData2);
-    //     jsonData2.forEach(function(data){
-    //         dataArray.push(data);
-    //     })
-    //     return productsJSON();
-    // }).then(function(jsonData3){
-    //     console.log("products",jsonData3);
-    //     jsonData3.forEach(function(data){
-    //         dataArray.push(data);
-    //     })
-    //     writeDOM();
-    //     console.log("Combo Array", dataArray);
-    // });
-
     //this method works the best for this solution
 
     function getData() {
@@ -69,23 +44,23 @@ $(document).ready(function() {
             .then(function(resultz) {
                 console.log("resultz", resultz);
                 resultz.forEach(function(ajaxCalls) {
-
-                    dataArray.push(ajaxCalls);
-
-                    // ajaxCalls.forEach(function(data) {
-                    //     dataArray.push(data);
-                    // })
-                })
-                console.log(dataArray);
+                        console.log(ajaxCalls);
+                        //dataArray.push(ajaxCalls);
+                    })
+                    //console.log(dataArray);
                 writeDOM();
             })
     }
 
-    $("#dropFireworks").click(function(e){
-        console.log($(this).text());
+    $("#dropFireworks").click(function(e) {
+        var clickedCat = $(this).text();
+        console.log(clickedCat);
+        getData(clickedCat);
     });
-    $("#dropDemo").click(function(e){
-        console.log($(this).text());
+    $("#dropDemo").click(function(e) {
+        var clickedCat = $(this).text();
+        console.log(clickedCat);
+        getData(clickedCat);
     });
 
 
