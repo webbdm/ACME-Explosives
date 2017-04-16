@@ -28,7 +28,7 @@ $(document).ready(function() {
     }
 
     function writeDOM(clickedCat, resultz) {
-        var domString = "";
+        var productString = "";
         //console.log(clickedCat, resultz);
 
         var cats = resultz[0];
@@ -46,7 +46,8 @@ $(document).ready(function() {
                             $.each(firstValue, function(key, value) {
                                 //console.log(value.type);
                                 if (value.type === currentType.id) {
-                                    console.log(value);
+                                    //console.log(currentCategory.name);
+                                    productString += writeProduct(currentCategory.name, currentType.name, value);
                                 }
                             });
                         });
@@ -55,11 +56,25 @@ $(document).ready(function() {
             }
         })
 
+      $("#productDIV").html(productString);  
+    }
 
+    function writeProduct(category, type, firework) {
+        console.log(category, type, firework);
 
+        var newFirework = `
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <img src="" alt="firework">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>${firework.name}</p>
+                    <p></p>
+                </div>
+            </div>
+        </div>`;
 
-
-
+        return newFirework
     }
 
     var categoriesJSON = function() {
