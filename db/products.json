@@ -3,19 +3,19 @@
         "pOne": {
             "id": 0,
             "type": 0,
-            "name": "Fairy Sparklers",
+            "name": "Snake",
             "description": "Multi-colored sparklers that are safe for any age."
         },
         "pTwo": {
             "id": 1,
             "type": 0,
-            "name": "Fairy Sparklers",
+            "name": "Poppers",
             "description": "Multi-colored sparklers that are safe for any age."
         },
         "pThree": {
             "id": 2,
             "type": 0,
-            "name": "Fairy Sparklers",
+            "name": "Smoke Bomb",
             "description": "Multi-colored sparklers that are safe for any age."
         },
         "pFour": {
@@ -27,13 +27,13 @@
         "pFive": {
             "id": 4,
             "type": 1,
-            "name": "Fairy Sparklers",
+            "name": "Crackle Sparklers",
             "description": "Multi-colored sparklers that are safe for any age."
         },
         "pSix": {
             "id": 5,
             "type": 1,
-            "name": "Fairy Sparklers",
+            "name": "Mega Sparklers",
             "description": "Multi-colored sparklers that are safe for any age."
         },
         "pSeven": {

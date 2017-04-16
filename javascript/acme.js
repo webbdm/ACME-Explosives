@@ -29,24 +29,17 @@ $(document).ready(function() {
 
     function writeDOM(clickedCat, resultz) {
         var productString = "";
-        //console.log(clickedCat, resultz);
-
         var cats = resultz[0];
         var types = resultz[1];
         var products = resultz[2];
-        //console.log(cats, types, products);
 
         cats.forEach(function(currentCategory) {
             if (currentCategory.name === clickedCat) {
                 types.forEach(function(currentType) {
                     if (currentType.category === currentCategory.id) {
-                        //console.log(products);
                         $.each(products, function(firstKey, firstValue) {
-                            //console.log(key, value);
                             $.each(firstValue, function(key, value) {
-                                //console.log(value.type);
                                 if (value.type === currentType.id) {
-                                    //console.log(currentCategory.name);
                                     productString += writeProduct(currentCategory.name, currentType.name, value);
                                 }
                             });
@@ -55,25 +48,21 @@ $(document).ready(function() {
                 })
             }
         })
-
-      $("#productDIV").html(productString);  
+        $("#productDIV").html(productString);
     }
 
     function writeProduct(category, type, firework) {
-        console.log(category, type, firework);
-
         var newFirework = `
         <div class="col-md-4">
             <div class="thumbnail">
                 <img src="" alt="firework">
                 <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>${firework.name}</p>
+                    <h3>${firework.name}</h3>
+                    <p>${type}</p>
                     <p></p>
                 </div>
             </div>
         </div>`;
-
         return newFirework
     }
 
