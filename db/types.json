@@ -2,32 +2,32 @@
     "types": [{
             "id": 0,
             "category": 0,
-            "name": "personal",
+            "name": "Personal",
             "description": "Fireworks intended for recreational use during holiday celebrations"
         }, {
             "id": 1,
             "category": 0,
-            "name": "sparklers",
+            "name": "Sparklers",
             "description": "Fireworks intended for recreational use during holiday celebrations"
         }, {
             "id": 2,
             "category": 0,
-            "name": "roman candles",
+            "name": "Roman candles",
             "description": "Fireworks intended for recreational use during holiday celebrations"
         }, {
             "id": 3,
             "category": 1,
-            "name": "anti-air",
+            "name": "Grenade",
             "description": "Fireworks intended for recreational use during holiday celebrations"
         }, {
             "id": 4,
             "category": 1,
-            "name": "ground",
+            "name": "Ground",
             "description": "Fireworks intended for recreational use during holiday celebrations"
         }, {
             "id": 5,
             "category": 1,
-            "name": "heavy",
+            "name": "Heavy",
             "description": "Fireworks intended for recreational use during holiday celebrations"
         }
 

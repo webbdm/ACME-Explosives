@@ -55,11 +55,11 @@ $(document).ready(function() {
         var newFirework = `
         <div class="col-md-4">
             <div class="thumbnail">
-                <img src="" alt="firework">
+                <img src="" alt="">
                 <div class="caption">
                     <h3>${firework.name}</h3>
-                    <p>${type}</p>
-                    <p></p>
+                    <p>${type} / ${category}</p>
+                    <p>${firework.description}</p>
                 </div>
             </div>
         </div>`;

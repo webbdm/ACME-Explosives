@@ -1,4 +1,46 @@
 body{
-	background: url("http://wallpaperzone.co/wp-content/uploads/2016/08/Fireworks-Desktop-Wallpaper-Background-HD.jpg") no-repeat center center fixed;
+	background: url("acmebkg.jpg") no-repeat center center fixed;
 	background-size: cover; 
+	padding: 0px;
 }
+
+.navbar, .navbar-default{
+	background-color: rgba(152, 31, 31, 0.79);
+	border-color: transparent;
+	margin-top: 0px;
+	height: 100px;
+}
+
+.navbar-header{
+   left: 50%;
+   position: relative;
+   transform: translateX(-50%);
+}
+
+.navbar-brand img{
+	height: 75px;
+	width: auto;
+}
+
+.btn{
+	margin-top: 35%;
+	background-color: #981F1F;
+	border-color: transparent;
+	color: black;
+}
+
+.btn:hover{
+	background-color: #981F1F;
+	border-color: transparent;
+	color: black;
+}
+
+.thumbnail{
+	background-color: rgba(0, 0, 0, 0.73);
+	text-align: center;
+}
+
+.thumbnail p, h3 {
+	color: white;
+}
+
