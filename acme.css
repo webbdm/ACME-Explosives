@@ -40,7 +40,13 @@ body{
 	text-align: center;
 }
 
-.thumbnail p, h3 {
+.thumbnail h3 {
+	color: #981F1F; 
+}
+
+.thumbnail p {
 	color: white;
 }
+
+
 
