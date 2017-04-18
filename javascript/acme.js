@@ -99,12 +99,8 @@ $(document).ready(function() {
     function getData(clickedCat) {
         Promise.all([categoriesJSON(), typesJSON(), productsJSON()])
             .then(function(resultz) {
-                //console.log("resultz", resultz);
                 resultz.forEach(function(ajaxCalls) {
-                        //console.log(ajaxCalls);
-                        //dataArray.push(ajaxCalls);
                     })
-                    //console.log(dataArray);
                 writeDOM(clickedCat, resultz);
             })
     }

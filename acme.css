@@ -1,5 +1,5 @@
 body{
-	background: url("acmebkg.jpg") no-repeat center center fixed;
+	background: url("/images/acmebkg.jpg") no-repeat center center fixed;
 	background-size: cover; 
 	padding: 0px;
 }
