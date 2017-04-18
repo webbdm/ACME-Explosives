@@ -5,7 +5,7 @@
 ## Goal
 Create several JSON files that will be describing all of the explosive products that you sell. Use Promises to handle the order of the asynchronous operations needed to load the data.
 
-![Car](https://github.com/nss-evening-cohort-05/spa-milestone-challenge-webbdm/blob/challenge/img/SwiftAuto.jpg)
+![Homepage](https://github.com/webbdm/ACME-Explosives/blob/exercise/images/Screenshot.png)
 
 ### Technical Requirements
 Create a simple user interface for your product catalog where a user can select a category from a dropdown. When a category is selected, you must use Promises to read, first, from the categories.json to load that array of objects, then load types.json, then products.json.
