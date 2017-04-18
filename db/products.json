@@ -1,0 +1,112 @@
+{
+    "products": [{
+        "Snake": {
+            "id": 0,
+            "type": 0,
+            "name": "Snake",
+            "description": "Light the snake and watch it grow"
+        },
+        "pTwo": {
+            "id": 1,
+            "type": 0,
+            "name": "Poppers",
+            "description": "Throw them on the ground & hear them splode"
+        },
+        "pThree": {
+            "id": 2,
+            "type": 0,
+            "name": "Smoke Bomb",
+            "description": "Assortment of colored Smoke Bombs with a 2-minute burn."
+        },
+        "pFour": {
+            "id": 3,
+            "type": 1,
+            "name": "Fairy Sparklers",
+            "description": "6-inch sparkler that is safe for all ages"
+        },
+        "pFive": {
+            "id": 4,
+            "type": 1,
+            "name": "Crackle Sparklers",
+            "description": "Standard sparkler with crackling effects"
+        },
+        "pSix": {
+            "id": 5,
+            "type": 1,
+            "name": "Mega Sparklers",
+            "description": "Super sized sparkler with color flares and crackling effects"
+        },
+        "pSeven": {
+            "id": 6,
+            "type": 2,
+            "name": "Mini Candle",
+            "description": "12-inch tube that is safe for all ages"
+        },
+        "pEight": {
+            "id": 7,
+            "type": 2,
+            "name": "Spartan Shot",
+            "description": "Standard roman candle with 12 shots"
+        },
+        "pNine": {
+            "id": 8,
+            "type": 2,
+            "name": "Vesuvius",
+            "description": "Jumbo-sized tube with 20 shots & sparkler effects"
+        },
+        "pTen": {
+            "id": 9,
+            "type": 3,
+            "name": "Hand Grenade",
+            "description": "Standard grenade"
+        },
+        "pEleven": {
+            "id": 10,
+            "type": 3,
+            "name": "Flashbang Grenade",
+            "description": "Grenad with a blinding flash"
+        },
+        "pTwelve": {
+            "id": 11,
+            "type": 3,
+            "name": "Super Grenade",
+            "description": "Grenade with 2x power"
+        },
+        "pThirteen": {
+            "id": 12,
+            "type": 4,
+            "name": "Claymore",
+            "description": "Proximity explosive device"
+        },
+        "pFourteen": {
+            "id": 13,
+            "type": 4,
+            "name": "TNT",
+            "description": "Standard dynamite stick"
+        },
+        "pFifteen": {
+            "id": 14,
+            "type": 4,
+            "name": "Satchel Charge",
+            "description": "Timed plastic explosive device"
+        },
+        "pSixteen": {
+            "id": 15,
+            "type": 5,
+            "name": "Mega TNT",
+            "description": "24 bundled sticks of dynamite"
+        },
+        "pSeventeen": {
+            "id": 16,
+            "type": 5,
+            "name": "Ultra TNT",
+            "description": "Palette of dynamite"
+        },
+        "pEighteen": {
+            "id": 17,
+            "type": 5,
+            "name": "MOAB",
+            "description": "Mother of All Bombs"
+        }
+    }]
+}
